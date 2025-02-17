@@ -1,0 +1,20 @@
+The solution is simple: remove the spaces around the operators in the `calc()` function.
+
+```css
+.element {
+  width: calc(100px + 50px);
+  /* Correct: No spaces around + */
+}
+
+.another-element {
+  height: calc(50% - 20px);
+  /* Correct: No spaces around - */
+}
+
+.yet-another {
+  margin: calc(10px * 2);
+  /* Correct: No spaces around * */
+}
+```
+
+This ensures that the CSS parser correctly interprets and calculates the values.
